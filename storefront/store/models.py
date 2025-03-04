@@ -9,4 +9,4 @@ class Product(models.Model):
     material= models.CharField(max_length=200)
 
     def __str__(self):
-        return self.title
+        return (f"ID:#{self.id}: {self.title}, {self.description},price:${self.price}, quantity:{self.quantity},material:{self.material}")
