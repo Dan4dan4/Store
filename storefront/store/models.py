@@ -6,3 +6,6 @@ class Product(models.Model):
     description= models.CharField(max_length=1000)
     price= models.IntegerField()
     quantity= models.IntegerField()
+
+    def __str__(self):
+        return self.title
